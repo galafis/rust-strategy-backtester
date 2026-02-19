@@ -56,6 +56,26 @@ Perfect for testing mean reversion strategies, momentum strategies, statistical 
 └─────────────────────────────────────────────────────────────┘
 ```
 
+```mermaid
+flowchart TD
+    A([Strategy Config\nParâmetros & Regras]) --> B[Carregamento de Dados Históricos\nOHLCV · Volume · Timestamps]
+    B --> C{Execução Paralela\nRayon}
+    C --> D1[Estratégia #1\nSMA 20/50]
+    C --> D2[Estratégia #2\nMean Reversion]
+    C --> D3[Estratégia #N\nCustom Strategy]
+    D1 --> E[Simulação Event-Driven\nEntry · Exit · Position Sizing]
+    D2 --> E
+    D3 --> E
+    E --> F[Trade Log\nHistórico Completo de Operações]
+    F --> G[Cálculo de Métricas de Performance]
+    G --> H1[Sharpe & Sortino Ratio]
+    G --> H2[Max Drawdown · Volatility]
+    G --> H3[Win Rate · Profit Factor]
+    H1 --> I([Relatório Final & Curva de Equity])
+    H2 --> I
+    H3 --> I
+```
+
 ### 📦 Installation
 
 Add to your `Cargo.toml`:
