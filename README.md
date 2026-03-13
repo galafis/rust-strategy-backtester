@@ -2,6 +2,7 @@
 
 [![Rust](https://img.shields.io/badge/rust-1.90%2B-orange.svg)](https://www.rust-lang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker)](Dockerfile)
 [![Parallel](https://img.shields.io/badge/Parallel-Rayon-green.svg)]()
 [![Performance](https://img.shields.io/badge/Performance-High-brightgreen.svg)]()
 
